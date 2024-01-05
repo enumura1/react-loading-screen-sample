@@ -1,9 +1,47 @@
 body {
+  margin: 0;
+  padding: 0;
+}
+
+.LoadMain {
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  background-color: pink;
+  animation: fadeout 6s;
+}
+
+.LoadedMain {
   height: 100vh;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  animation: fadein 4s;
+}
+
+.progressBarContainer {
+  text-align: center;
+  width: 50%;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
